@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo Ken Po</title>
+
+    <!-- Fonte Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Meu codigo CSS -->
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="tela_inicial" id="telaInicial">
+        <div class="imagem_inicial"><img src="img/Jo-Ken-Po.png" alt="Jo-Ken-Po"></div>
+        <div class="botao_jogar"><button id="btIniciar">Iniciar</button></div>
+    </div>
+
+    <div class="jogo_principal display_none" id="telaJogo">
+        <div class="placar">
+            <div class="meu_placar">
+                <div class="nome"><p id="nome_jogador"></p></div>
+                <div class="placar_jogo color"><p id="pontos_jogador"></p></div>
+            </div>
+                <div class="contra"><p>X</p></div>
+            <div class="placar_oponente">
+                <div class="placar_jogo color"><p id="pontos_oponente"></p></div>
+                <div class="nome"><p id="nome_oponente"></p></div>
+            </div>
+        </div>
+    
+        <!--
+        <div class="tipo_de_jogo">
+            <p>MD3</p>
+        </div>-->
+
+        <div class="mesa_cartas">
+            <div class="cartas_oponentes">
+                <img src="img/Card Tras.png" alt="Cartas Oponente" id="carta_op_1">
+                <img src="img/Card Tras.png" alt="Cartas Oponente" id="carta_op_2">
+                <img src="img/Card Tras.png" alt="Cartas Oponente" id="carta_op_3">
+                
+                <img src="" alt="Carta Oponente Jogada" id="carta_oponente" class="position_cartas_oponente display_none">
+            </div>
+            <div class="centro">
+                <div class="baralho">
+                    <img src="img/Card Tras.png" alt="Carta Simbolizando Baralho">
+                </div>
+            </div>
+            <div class="minhas_cartas">
+                <img src="img/Card Tras.png" alt="" id="minha_carta_1">
+                <img src="img/Card Tras.png" alt="" id="minha_carta_2">
+                <img src="img/Card Tras.png" alt="" id="minha_carta_3">
+            </div>
+        </div>
+    </div>
+
+    <div class="fim_game display_none" id="telaResultado">
+        <div class="vitoria_derrota">
+            <p id="resultado"></p>
+            <button id="btInicio">Voltar</button>
+        </div>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+</html>
